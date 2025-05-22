@@ -33,7 +33,9 @@ public class MenuInicio : MonoBehaviour
     public void Boton_Jugar()
     {
         Debug.Log("Click en boton Jugar");
-        GameManager.instancia.CargarEscenaJuego();
+        SoundManager.instancia.ReproducirSonido(0);
+        GameManager.instancia.CargarEscenaJugable();
+        
     }
 
     /// <summary>
@@ -42,6 +44,7 @@ public class MenuInicio : MonoBehaviour
     public void Boton_Salir()
     {
         Debug.Log("Click en boton Salir");
+        SoundManager.instancia.ReproducirSonido(1);
         Application.Quit();        
     }
     #endregion
