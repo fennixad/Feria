@@ -35,7 +35,6 @@ public class MenuInicio : MonoBehaviour
         Debug.Log("Click en boton Jugar");
         SoundManager.instancia.ReproducirSonido(0);
         GameManager.instancia.CargarEscenaJugable();
-        
     }
 
     /// <summary>

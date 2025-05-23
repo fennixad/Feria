@@ -27,10 +27,10 @@ public class HudManager : MonoBehaviour
     {
         MoverMirillaDentroLimites();
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GameManager.instancia.PausarJuego();
-        }
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    GameManager.instancia.PausarJuego();
+        //}
     }
     #endregion
     // ***********************************************
@@ -57,8 +57,6 @@ public class HudManager : MonoBehaviour
 
         mirilla.anchoredPosition = localPoint;
     }
-
-
     #endregion
     // ***********************************************
 }
